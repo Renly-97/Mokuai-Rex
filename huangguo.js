@@ -152,7 +152,7 @@ const STORAGE_KEY_WORKER = "hg_cover_worker";
 // 封面解密 Worker 地址（代码内默认值，默认留空，不要内置任何人的私有 Worker）：
 // 推荐在 App 的模块设置「封面代理(Worker)地址」里填写（优先级最高，无需改脚本）；
 // 不方便前端配置时，也可直接把地址填到下面引号内。两者都为空则使用原始封面地址。
-const HUANGGUO_COVER_WORKER_URL = "";
+const HUANGGUO_COVER_WORKER_URL = "https://huangguo-cover.daidiandemomo.workers.dev";
 
 function normalizeWorker(value) {
   return String(value || "").trim().replace(/\/+$/, "");
